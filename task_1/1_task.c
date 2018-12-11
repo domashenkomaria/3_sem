@@ -41,7 +41,7 @@ int main() {
         char *str;
         while(26) {
                 str = (char *)malloc(max_arg * sizeof(char));
-                fgets(str, sizeof(str), stdin);
+                scanf("%[^\n]%*c", str);
                 run(str);
                 free(str);
         }
